@@ -1,6 +1,6 @@
 //Creazione GESTIONE API MOVIE
 import axios from 'axios';
-import type { MovieResponse, MovieDetails, Cast } from '../types/movie';
+import type { MovieResponse, MovieDetails, Cast } from  '../types/movie';
 
 const API_KEY = '4e44d9029b1270a757cddc766a1bcb63'
 const BASE_URL = 'https://api.themoviedb.org/3';

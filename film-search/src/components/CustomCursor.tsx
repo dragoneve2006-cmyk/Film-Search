@@ -5,6 +5,10 @@ const CustomCursor = () => {
     const [position, setPosition] = useState({x: 0,y: 0});
 
     useEffect(() => {
+        //Nascondo il cursore di default
+        document.body.style.cursor = 'none';
+
+        //Movimento del cursore
         const moveCursor = (e: MouseEvent) => {
             setPosition({x: e.clientX, y: e.clientY});
         };

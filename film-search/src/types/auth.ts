@@ -16,7 +16,7 @@ export interface UserCredentials {
 }
 
 //Dati per Registrazione
-export interface RegisterDate extends UserCredentials {
+export interface RegisterData extends UserCredentials {
     username: string;
     confirmPassword: string;
 }
@@ -27,7 +27,7 @@ export interface AuthState {
     isAuthenticated: boolean;
     isAdmin: boolean;
     login: (credentials: UserCredentials) => Promise<void>;
-    register: (data: RegisterDate) => Promise<void>;
+    register: (data: RegisterData) => Promise<void>;
     logout: () => void;
 }
 

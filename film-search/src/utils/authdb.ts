@@ -136,7 +136,7 @@ export const logoutUser = () => {
 };
 
 //Cambio Email Utente
-export const upddateUserEmail = (userId: string, newEmail: string) => {
+export const updateUserEmail = (userId: string, newEmail: string) => {
     const users = getAllUsers();
     const userIndex = users.findIndex(u => u.id === userId);
 

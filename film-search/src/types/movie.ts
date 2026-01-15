@@ -41,3 +41,14 @@ export interface MovieResponse {
     total_results: number;
     total_pages: number;
 }
+
+//Parametri per valutazione con chiamata POST 
+export interface RatingRequest{
+    value: number;
+}
+
+export interface RatingResponse{
+    success: boolean;
+    status_code: number;
+    status_message: string;
+}

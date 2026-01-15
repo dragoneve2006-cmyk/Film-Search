@@ -2,28 +2,28 @@
 
 import {useMovieRating} from "../hooks/useMovieRating";
 
-interface MovieRaptingProps{
-    movidId: number;
+interface MovieRatingProps{
+    movieId: number;
 }
 
 /**
  * valutazione Film
  * Con chiamata POST per inviare o rimuovere la valutazione
- * @param movidId - ID film 
+ * @param movieId - ID film 
  * @returns 
  */
 
 
-export const MovieRating = ({movidId}: MovieRaptingProps) => {
+export const MovieRating = ({movieId}: MovieRatingProps) => {
     const{
         userRating,
-        setuserRating,
+        setUserRating,
         ratingMessage,
         isLoading,
         submitRating,
         removeRating,
         hasRated,
-    } = useMovieRating(movidId);
+    } = useMovieRating(movieId);
 
     return(
         <div className="rating-section">
@@ -42,7 +42,7 @@ export const MovieRating = ({movidId}: MovieRaptingProps) => {
                     max="10"
                     step="0.5"
                     value={userRating}
-                    onChange={(e) => setuserRating(parseFloat(e.target.value))}
+                    onChange={(e) => setUserRating(parseFloat(e.target.value))}
                     className="rating-slider"
                     disabled={isLoading}
                     aria-label="Seleziona valutazione"

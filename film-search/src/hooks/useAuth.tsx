@@ -2,7 +2,7 @@
 
 import {create} from 'zustand';
 import type {UserCredentials, RegisterData, User} from '../types/auth';
-import {
+import{
     registerUser,
     loginUser,
     getCurrentUser,
@@ -12,7 +12,7 @@ import {
     updateUsername,
     updateUserPassword,
     deleteUserAccount
-} from '../utils/authdb'
+} from '../utils/authdb';
 import {useFavorites} from './useFavorites';
 import {useWatchlist} from './useWatchlist';
 

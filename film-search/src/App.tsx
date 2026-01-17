@@ -1,6 +1,8 @@
-import CustomCursor from "./components/CustomCursor";
 import {QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import {AppRouter} from "./router/AppRouter";
+import CustomCursor from "./components/CustomCursor";
 import './App.css'
+
 
 
 //Configuring React Query Client
@@ -18,6 +20,7 @@ function App() {
     return(
         <QueryClientProvider client={queryClient}>
             <CustomCursor />
+            <AppRouter />
         </QueryClientProvider>
     );
 }

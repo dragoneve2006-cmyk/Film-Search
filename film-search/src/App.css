@@ -254,3 +254,94 @@ body {
     color: var(--text-secondary);
 }
 
+/* MOVIE PAGE */
+.movies-container{
+    animation: fadeIn 0.5s ease;
+}
+
+.movies-header{
+    margin-bottom: 2rem;
+}
+
+.movies-header h1{
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.search-form{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.search.input{
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--bg-tertiary);
+    border-radius: var(--border-radius);
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: var(--transition);
+    min-width: 200px;
+}
+
+.search-input:focus{
+    outline: none;
+    border-color: var(--primary);
+}
+
+.tabs{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tab{
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-radius);
+    border-radius: var(--border-radius);
+    color: var(--transition);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.tab:hover{
+    background: var(--bg-tertiary);
+    color: var(--bg-tertiary);
+}
+
+.tab.active{
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary-light);
+}
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.no-results {
+    text-align: center;
+    padding: 3rem;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.page-info {
+    color: var(--text-secondary);
+    font-weight: 600;
+}

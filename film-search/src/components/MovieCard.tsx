@@ -140,7 +140,7 @@ export const MovieCard = ({movie, showWatchlistActions = false, currentList}: Mo
                 )}
             
             <div className="movie-card-content">
-                <h3 className="movite-title">{movie.title}</h3>
+                <h3 className="movie-title">{movie.title}</h3>
                 <div className="movie-info">
                     <span className="movie-year">
                         {movie.release_date ? new Date(movie.release_date).getFullYear() : 'N/A'}

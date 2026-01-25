@@ -599,3 +599,52 @@ body {
     color: var(--primary);
     margin-right: 0.5rem;
 }
+
+/* FILM CAST DETAILS */
+.cast-section {
+    margin-top: 3rem;
+}
+
+.cast-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.cast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.cast-card {
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+}
+
+.cast-card:hover {
+    transform: translateY(-5px);
+}
+
+.cast-card img {
+    width: 100%;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+}
+
+.cast-info {
+    padding: 1rem;
+}
+
+.actor-name {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.character-name {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}

@@ -776,124 +776,197 @@ a, button, input, textarea, select,
 
 /* FORM STYLE */
 .form-container {
-    max-width: 450px;
+    max-width: 480px;
     margin: 3rem auto;
-    padding: 2.5rem;
-    background: var(--bg-secondary);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
+    padding: 3rem;
+    background: linear-gradient(145deg, var(--bg-secondary) 0%, rgba(30, 41, 59, 0.8) 100%);
+    border-radius: 20px;
+    box-shadow: 
+        0 10px 40px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(59, 130, 246, 0.1);
     animation: fadeIn 0.5s ease;
+    backdrop-filter: blur(10px);
 }
 
 .form-title {
     text-align: center;
     margin-bottom: 0.5rem;
-    font-size: 2rem;
-    color: var(--primary);
+    font-size: 2.2rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .form-subtitle {
     text-align: center;
-    color: var(--text-secondary);
-    margin-bottom: 2rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+    font-size: 0.95rem;
+    font-weight: 400;
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
+    position: relative;
 }
 
 .form-label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.6rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-left: 0.25rem;
+    transition: color 0.3s;
+    letter-spacing: 0.3px;
 }
 
 .form-input {
     width: 100%;
-    padding: 0.75rem 1rem;
-    border: 2px solid var(--bg-tertiary);
-    border-radius: var(--border-radius);
-    background: var(--bg-primary);
+    padding: 1rem 1.25rem;
+    background: rgba(15, 23, 42, 0.6);
+    border: 2px solid rgba(100, 116, 139, 0.2);
+    border-radius: 12px;
     color: var(--text-primary);
     font-size: 1rem;
-    transition: var(--transition);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: inherit;
+}
+
+.form-input::placeholder {
+    color: rgba(148, 163, 184, 0.4);
+    font-weight: 400;
+}
+
+.form-input:hover {
+    border-color: rgba(59, 130, 246, 0.3);
 }
 
 .form-input:focus {
     outline: none;
+    background: rgba(30, 41, 59, 0.8);
     border-color: var(--primary);
+    box-shadow: 
+        0 0 0 4px rgba(59, 130, 246, 0.15),
+        inset 0 2px 4px rgba(0, 0, 0, 0.2),
+        0 4px 12px rgba(59, 130, 246, 0.2);
+    transform: translateY(-1px);
+}
+
+.form-input:focus + .form-label {
+    color: var(--primary);
 }
 
 .form-input:disabled {
-    opacity: 0.6;
+    opacity: 0.5;
     cursor: not-allowed;
+    background: rgba(15, 23, 42, 0.3);
 }
 
 .form-group small {
     display: block;
-    margin-top: 0.25rem;
+    margin-top: 0.5rem;
     color: var(--text-muted);
-    font-size: 0.85rem;
+    font-size: 0.8rem;
+    margin-left: 0.25rem;
+    font-style: italic;
 }
 
 .form-button {
     width: 100%;
-    padding: 1rem;
-    background: var(--primary);
+    padding: 1.1rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     color: white;
     border: none;
-    border-radius: var(--border-radius);
-    font-size: 1rem;
-    font-weight: 600;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    font-weight: 700;
     cursor: pointer;
-    transition: var(--transition);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+    letter-spacing: 0.5px;
+    margin-top: 0.5rem;
 }
 
 .form-button:hover:not(:disabled) {
-    background: var(--primary-dark);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+.form-button:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
 }
 
 .form-button:disabled {
     opacity: 0.6;
     cursor: not-allowed;
+    transform: none;
 }
 
 .form-link {
     text-align: center;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     color: var(--text-secondary);
+    font-size: 0.95rem;
 }
 
 .form-link a {
-    color: var(--primary);
+    color: var(--primary-light);
     text-decoration: none;
     font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
 .form-link a:hover {
-    text-decoration: underline;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.form-link a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.form-link a:hover::after {
+    width: 100%;
 }
 
 .error-message {
-    background: rgba(239, 68, 68, 0.1);
-    border: 2px solid var(--danger);
-    color: var(--danger);
-    padding: 1rem;
-    border-radius: var(--border-radius);
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(239, 68, 68, 0.05) 100%);
+    border: 2px solid rgba(239, 68, 68, 0.4);
+    border-left: 4px solid var(--danger);
+    color: #fca5a5;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
     margin-bottom: 1.5rem;
-    text-align: center;
+    text-align: left;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.1);
 }
 
 .success-message {
-    background: rgba(16, 185, 129, 0.1);
-    border: 2px solid var(--success);
-    color: var(--success);
-    padding: 1rem;
-    border-radius: var(--border-radius);
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(16, 185, 129, 0.05) 100%);
+    border: 2px solid rgba(16, 185, 129, 0.4);
+    border-left: 4px solid var(--success);
+    color: #6ee7b7;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
     margin-bottom: 1.5rem;
-    text-align: center;
+    text-align: left;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
 }
 
 /* ACCOUNT SETTINGS */
@@ -957,8 +1030,11 @@ a, button, input, textarea, select,
 }
 
 .danger-zone {
-    border: 2px solid var(--danger);
-    background: rgba(239, 68, 68, 0.05);
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    background: linear-gradient(145deg, rgba(239, 68, 68, 0.05), transparent);
 }
 
 .warning-text {
@@ -967,7 +1043,7 @@ a, button, input, textarea, select,
     line-height: 1.8;
 }
 
-/* ADMIN PANNEL */
+/* ADMIN PANEL */
 .admin-panel {
     animation: fadeIn 0.5s ease;
 }

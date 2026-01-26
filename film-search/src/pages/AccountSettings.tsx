@@ -130,10 +130,11 @@ export const AccountSettings = () => {
                     {emailError && <p className="error-message">❌ {emailError}</p>}
                     <form onSubmit={handleEmailUpdate} className="settings-form">
                         <div className="form-group">
-                            <label htmlFor="email">Nuova Email</label>
+                            <label htmlFor="email" className="form-label">Nuova Email</label>
                             <input
                                 id="email"
                                 type="email"
+                                className="form-input"
                                 value={newEmail}
                                 onChange={(e) => setNewEmail(e.target.value)}
                                 required
@@ -155,10 +156,11 @@ export const AccountSettings = () => {
                     {usernameError && <p className="error-message">❌ {usernameError}</p>}
                     <form onSubmit={handleUpdateUsername} className="settings-form">
                         <div className="form-group">
-                            <label htmlFor="username">Nuovo Username</label>
+                            <label htmlFor="username" className="form-label">Nuovo Username</label>
                             <input
                                 id="username"
                                 type="text"
+                                className="form-input"
                                 value={newUsername}
                                 onChange={(e) => setNewUsername(e.target.value)}
                                 required
@@ -181,10 +183,11 @@ export const AccountSettings = () => {
                     {passwordError && <p className="error-message">❌ {passwordError}</p>}
                     <form onSubmit={handleChangePassword} className="settings-form">
                         <div className="form-group">
-                            <label htmlFor="currentPassword">Password Attuale</label>
+                            <label htmlFor="currentPassword" className="form-label">Password Attuale</label>
                             <input
                                 id="currentPassword"
                                 type="password"
+                                className="form-input"
                                 value={currentPassword}
                                 onChange={(e) => setCurrentPassword(e.target.value)}
                                 required
@@ -194,10 +197,11 @@ export const AccountSettings = () => {
                             />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="newPassword">Nuova Password</label>
+                            <label htmlFor="newPassword" className="form-label">Nuova Password</label>
                             <input
                                 id="newPassword"
                                 type="password"
+                                className="form-input"
                                 value={newPassword}
                                 onChange={(e) => setNewPassword(e.target.value)}
                                 required
@@ -208,10 +212,11 @@ export const AccountSettings = () => {
                             <small>Minimo 6 caratteri</small>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="confirmNewPassword">Conferma Nuova Password</label>
+                            <label htmlFor="confirmNewPassword" className="form-label">Conferma Nuova Password</label>
                             <input
                                 id="confirmNewPassword"
                                 type="password"
+                                className="form-input"
                                 value={confirmNewPassword}
                                 onChange={(e) => setConfirmNewPassword(e.target.value)}
                                 required
@@ -247,10 +252,11 @@ export const AccountSettings = () => {
                                 {deleteError && <div className="error-message">❌ {deleteError}</div>}
                                 <form onSubmit={handleDeleteAccount} className="settings-form">
                                     <div className="form-group">
-                                        <label htmlFor="deletePassword">Conferma con la tua password</label>
+                                        <label htmlFor="deletePassword" className="form-label">Conferma con la tua password</label>
                                         <input
                                             id="deletePassword"
                                             type="password"
+                                            className="form-input"
                                             value={deletePassword}
                                             onChange={(e) => setDeletePassword(e.target.value)}
                                             required

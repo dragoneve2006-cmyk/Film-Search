@@ -60,7 +60,7 @@ export const saveUsers = (user: StoredUser[]) => {
 }
 
 //Aggiungere nuovo utente al database locale
-export const registerUser = (email: string, password: string, username: string): User => {
+export const registerUser = (username: string, email: string, password: string): User => {
     initializeAdmin(); //Ci assicuriamo che l'admin esista
     const users = getAllUsers();
 

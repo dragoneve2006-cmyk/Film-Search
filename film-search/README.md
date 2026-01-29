@@ -191,3 +191,29 @@ password : admin123
 
 ---
 
+## 📝 Note di Sviluppo
+
+### Scelte Strutturali
+1. **Zustand**: scelto per la semplicita nell'utilizzo e applicazione
+2. **React Query**: ha una gestione cache superiore (approfindito al ragurado)
+3. **Custom Hooks**: per separazione logica
+
+---
+
+## 📄 Licenza
+
+MIT license
+
+---
+
+## 👨‍💻 Autore
+
+**Nathan Seganti 29/01/2026**
+
+Progetto per esame 30/01/2026 UF-07 Programmazione Web
+
+Docente di riferimento P.Rocchio
+
+---
+
+*Ultimo aggiornamento: 29 Gennaio 2026*

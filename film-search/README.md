@@ -116,3 +116,48 @@ film-search/
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
+
+---
+
+## 🔐 Credenziali di Test
+
+### Admin
+email : admin@example.com
+password : admin123
+
+### Utente Standard
+1. Registrati:
+    - crea nome utente
+    - crea email
+    - crea password
+    - conferma password
+2. Accedi: 
+    - Inserisci email
+    - Inserisci password
+    - Clicca su accedi
+
+⚠️ **NB** : Questa applicazione uttilizza un local storage quindi non ha nessun tipo di sicurezza beckend
+
+---
+
+### 🛠️ Strumenti Uttilizzati
+
+## Core
+- React 18.3.1 - Libreria UI
+- TypeScript 5.6.2 - JavaScript tipizzato
+- Vite 6.0.1 - Build root e dev server
+
+## Routing - State
+- React Router Dom - Routing client side
+- Zustand - State managemnt base
+
+## Data Fetching
+- TanStack Query (React Query) - Gestione chiamate API e cache
+- Axios - HTTP client
+
+## Styling
+- CSS - Styling custom con variabili
+- Responsive design - Mobile primo approcio
+
+
+

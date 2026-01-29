@@ -2,7 +2,7 @@
 
 ---
 
-## 📋 Descrizione del Progett4o
+## 📋 Descrizione del Progetto
 Cosè Film Search: film search nasce come idea personale per segnarsi i film visti, da vedere e quelli più belli;
 Da qui ho deciso di sviluppare questa "Single Page Application" sia come prova per le mie competenze, che come esame 
 ma soprattutto come strumento da uttilizzare.

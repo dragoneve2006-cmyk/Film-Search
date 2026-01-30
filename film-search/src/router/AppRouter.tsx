@@ -1,4 +1,4 @@
-// Gestione del routing
+// Gestione del routing della SPA
 
 import {BrowserRouter, Routes, Route, Link, NavLink, Navigate} from 'react-router-dom';
 import {Home} from '../pages/Home';
@@ -20,6 +20,7 @@ import ClickSpark from '../components/ClickSpark';
 export const AppRouter = () => {
     const {isAuthenticated, user, isAdmin, logout} = useAuth();
 
+    /* Spark effect ad ogni click del mouse */
     return(
         <ClickSpark
       sparkColor="#3b82f6"
@@ -30,7 +31,8 @@ export const AppRouter = () => {
       easing="ease-out"
       extraScale={1.2}
     >
-        
+    
+    {/* Struttura della SPA con navigazione e routing */}
         <BrowserRouter>
             <div className="app">
                 <nav className="navbar">

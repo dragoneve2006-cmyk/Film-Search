@@ -13,7 +13,7 @@ export const Home = () => {
                     🎬 Film Search{isAuthenticated ? ` - Ciao ${user?.username}` : ''}
                 </h1>
                 <p className="hero-subtitle">
-                    Oltre 50k film a portata di click. Cerca, scopri e organnizza la tua watchlist personale!
+                    Oltre 1ML di film a portata di click. Cerca, scopri e organizza la tua watchlist personale!
                 </p>
                 <div className="hero-actions">
                     {isAuthenticated ? (

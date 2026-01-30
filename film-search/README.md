@@ -2,7 +2,7 @@
 
 ---
 
-## 📋 Descrizione del Progetto
+## Descrizione del Progetto
 Cosè Film Search: film search nasce come idea personale per segnarsi i film visti, da vedere e quelli più belli;
 Da qui ho deciso di sviluppare questa "Single Page Application" sia come prova per le mie competenze, che come esame 
 ma soprattutto come strumento da uttilizzare.
@@ -11,7 +11,7 @@ NB ⚠️ : QUESTO PROGETTO PERMETTE SOLO ED ESCLUSIVAMENTE LA RICERCA DI FILM (
 
 ---
 
-### 🎯 Scopo del progetto
+### Scopo del progetto
 
 Il progetto doveva permettermi di avere una pagina su cui visualizzare tutti i film di oggi giorno in constante aggiornamento,
 la possibilita di una watchlist personalizzata divisa in DA VEDERE - VISTI - PREFERIT, 
@@ -20,7 +20,7 @@ Tutto questo sommato ad una Grafica CSS elaborata e un uttilizzo anche di compon
 
 ---
 
-## 🚀 Installazione ed Esecuzione del progetto
+## Installazione ed Esecuzione del progetto
 
 ### Prerequisiti minimi
 - Node.js (v18 o superiore)
@@ -42,7 +42,7 @@ Una volta eseguito questo comando l'applicazione sarà disponibile su:
 
 ---
 
-## 🔑 API Uttilizzata
+## API Uttilizzata
 
 ### TMDB - The Movie Database
 
@@ -69,7 +69,7 @@ const API_KEY = '4e44d9029b1270a757cddc766a1bcb63'
 
 ---
 
-## 📂 Struttura del Progetto
+## Struttura del Progetto
 
 film-search/
 ├── public/                         # Asset pubblici
@@ -119,7 +119,7 @@ film-search/
 
 ---
 
-## 🔐 Credenziali di Test
+## Credenziali di Test
 
 ### Admin
 email : admin@example.com
@@ -161,7 +161,7 @@ password : admin123
 
 ---
 
-## 🎨 Caratteristiche UI / UX
+## Caratteristiche UI / UX
 
 ### Design System
 - Colore del pattern generale: Dark su base blu
@@ -176,7 +176,7 @@ password : admin123
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Test Manuale Eseguito
 - [x] Ricerca film
@@ -191,7 +191,7 @@ password : admin123
 
 ---
 
-## 📝 Note di Sviluppo
+## Note di Sviluppo
 
 ### Scelte Strutturali
 1. **Zustand**: scelto per la semplicita nell'utilizzo e applicazione
@@ -200,13 +200,13 @@ password : admin123
 
 ---
 
-## 📄 Licenza
+## Licenza
 
 MIT license
 
 ---
 
-## 👨‍💻 Autore
+## Autore
 
 **Nathan Seganti 29/01/2026**
 
